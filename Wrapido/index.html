@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapido Car Care | Al Quoz Dubai | Premium PPF & Wraps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --red: #e60000; --black: #0a0a0a; --dark-grey: #161616; --white: #ffffff; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--black); color: var(--white); scroll-behavior: smooth; }
+        
+        /* Navigation Mockup */
+        nav { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: absolute; width: 90%; z-index: 10; }
+        .logo { font-family: 'Bebas Neue'; font-size: 2.5rem; color: var(--red); letter-spacing: 2px; }
+
+        /* Hero */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; }
+        .hero img { position: absolute; width: 100%; height: 100%; object-fit: cover; filter: brightness(40%); z-index: -1; }
+        .hero-content h1 { font-family: 'Bebas Neue'; font-size: clamp(4rem, 10vw, 8rem); margin: 0; line-height: 0.9; }
+        .hero-content p { font-size: 1.2rem; letter-spacing: 5px; color: #ccc; margin-top: 10px; }
+
+        /* Pricing/Packages Table */
+        .packages { padding: 100px 5%; background: var(--black); text-align: center; }
+        .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .package-card { background: var(--dark-grey); padding: 40px; border-radius: 15px; border: 1px solid #222; transition: 0.3s; position: relative; }
+        .package-card:hover { border-color: var(--red); transform: translateY(-10px); }
+        .package-card.featured { border: 2px solid var(--red); }
+        .price { font-size: 3rem; font-weight: 800; color: var(--red); margin: 20px 0; }
+        .price span { font-size: 1rem; color: #888; }
+        .package-card ul { list-style: none; padding: 0; margin: 30px 0; color: #bbb; line-height: 2; }
+
+        /* The "Old School" Review Wall */
+        .reviews { padding: 100px 5%; background: #050505; }
+        .review-container { display: flex; overflow-x: auto; gap: 20px; padding: 20px 0; scrollbar-width: none; }
+        .review-card { min-width: 350px; background: #111; border-radius: 10px; overflow: hidden; transition: 0.3s; }
+        .review-card img { width: 100%; filter: grayscale(100%); transition: 0.5s; }
+        .review-card:hover img { filter: grayscale(0%); }
+
+        /* Call to Action */
+        .cta-btn { background: var(--red); color: white; padding: 18px 45px; text-decoration: none; font-weight: 800; border-radius: 5px; display: inline-block; transition: 0.3s; }
+        .cta-btn:hover { background: #b30000; box-shadow: 0 0 20px rgba(230,0,0,0.6); }
+
+        /* WhatsApp Button */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 100; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">WRAPIDO</div>
+        <a href="https://wa.me/971551161320" class="cta-btn" style="padding: 10px 25px; font-size: 0.8rem;">CONTACT US</a>
+    </nav>
+
+    <section class="hero">
+        <img src="templates/header1.png" alt="Luxury Car Wrap">
+        <div class="hero-content">
+            <h1>PROTECT YOUR<br><span style="color: var(--red);">LEGACY.</span></h1>
+            <p>AL QUOZ INDUSTRIAL 4 • DUBAI</p>
+            <br>
+            <a href="#packages" class="cta-btn">VIEW PACKAGES</a>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h2 style="font-family: 'Bebas Neue'; font-size: 4rem;">SERVICE TIERS</h2>
+        <div class="package-grid">
+            <div class="package-card">
+                <h3>ESSENTIAL PROTECTION</h3>
+                <div class="price">3,500<span>AED</span></div>
+                <ul>
+                    <li>Premium Window Tinting</li>
+                    <li>Headlight & Door Edge PPF</li>
+                    <li>Interior Detail Cleaning</li>
+                    <li>1 Year Warranty</li>
+                </ul>
+                <a href="#" class="cta-btn" style="background: transparent; border: 1px solid var(--red);">INQUIRE</a>
+            </div>
+            <div class="package-card featured">
+                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--red); padding: 5px 15px; font-size: 0.7rem; font-weight: 800; border-radius: 20px;">MOST POPULAR</div>
+                <h3>ELITE STYLING</h3>
+                <div class="price">7,500<span>AED</span></div>
+                <ul>
+                    <li>Full Vinyl Color Change (3M/Avery)</li>
+                    <li>Ceramic Coating Top Layer</li>
+                    <li>Full De-Chrome Treatment</li>
+                    <li>3 Year Warranty</li>
+                </ul>
+                <a href="#" class="cta-btn">BOOK NOW</a>
+            </div>
+            <div class="package-card">
+                <h3>ULTIMATE ARMOR (PPF)</h3>
+                <div class="price">15,000<span>AED</span></div>
+                <ul>
+                    <li>Full Body Paint Protection Film</li>
+                    <li>Self-Healing Technology</li>
+                    <li>Wheels & Caliper Coating</li>
+                    <li>10 Year Warranty</li>
+                </ul>
+                <a href="#" class="cta-btn" style="background: transparent; border: 1px solid var(--red);">INQUIRE</a>
+            </div>
+        </div>
+    </section>
+
+   <section class="reviews">
+    <h2 style="font-family: 'Bebas Neue'; text-align: center; font-size: 3rem; margin-bottom: 40px;">REVIEWS FROM THE ROAD</h2>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="review-glass-overlay"></div>
+            <img src="templates/review1.png" alt="Google Review 1">
+        </div>
+        <div class="review-card">
+            <div class="review-glass-overlay"></div>
+            <img src="templates/review2.png" alt="Google Review 2">
+        </div>
+		<div class="review-card">
+            <div class="review-glass-overlay"></div>
+            <img src="templates/review3.png" alt="Google Review 3">
+    	</div>
+		<div class="review-card">
+            <div class="review-glass-overlay"></div>
+            <img src="templates/review4.png" alt="Google Review 4">
+		</div>
+		<div class="review-card">
+            <div class="review-glass-overlay"></div>
+            <img src="templates/review5.png" alt="Google Review 4">
+		</div>
+</section>
+
+<section style="padding: 80px 5%; background: #000; border-top: 1px solid #222;">
+    <div class="spec-grid">
+        <div class="spec-column">
+            <h3>ACCESSIBILITY</h3>
+            <ul>
+                <li><span>✔</span> Wheelchair-accessible Entrance & Seating</li>
+                <li><span>✔</span> Wheelchair-accessible Car Park</li>
+                <li><span>✔</span> Accessible Toilets</li>
+            </ul>
+        </div>
+        <div class="spec-column">
+            <h3>AMENITIES & SERVICES</h3>
+            <ul>
+                <li><span>✔</span> On-site Services</li>
+                <li><span>✔</span> Gender-neutral Toilets</li>
+                <li><span>✔</span> Free Street & On-site Parking</li>
+            </ul>
+        </div>
+        <div class="spec-column">
+            <h3>PAYMENTS</h3>
+            <ul>
+                <li><span>✔</span> NFC Mobile Payments (Apple/Samsung Pay)</li>
+                <li><span>✔</span> Credit & Debit Cards Accepted</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section style="padding: 100px 5%; background: #050505;">
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-family: 'Bebas Neue'; font-size: 4rem; margin: 0;">THE SHOWROOM</h2>
+        <p style="color: var(--red); letter-spacing: 3px; font-weight: 600;">PRECISION IN EVERY INCH</p>
+    </div>
+
+    <div class="collage-container">
+        <div class="collage-item large">
+            <img src="templates/work5.png" alt="Featured Wrap">
+            <div class="overlay"><span>FULL BODY PPF</span></div>
+        </div>
+        
+        <div class="collage-item">
+            <img src="templates/work3.png" alt="Work 1">
+            <div class="overlay"><span>CUSTOM TINT</span></div>
+        </div>
+        
+        <div class="collage-item">
+            <img src="templates/work1.png" alt="Work 2">
+            <div class="overlay"><span>MATTE FINISH</span></div>
+        </div>
+        
+        <div class="collage-item">
+            <img src="templates/work4.png" alt="Work 3">
+            <div class="overlay"><span>DE-CHROME</span></div>
+        </div>
+        
+        <div class="collage-item">
+            <img src="templates/header2.png" alt="Work 4">
+            <div class="overlay"><span>SATIN GREY</span></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .collage-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        gap: 15px;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .collage-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        border: 1px solid #222;
+    }
+
+    .collage-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* Making the first image span 2 rows and 2 columns */
+    .collage-item.large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    /* Hover Effects */
+    .collage-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .collage-item:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay span {
+        font-family: 'Bebas Neue';
+        font-size: 1.5rem;
+        color: var(--red);
+    }
+
+    /* Responsive Mobile Grid */
+    @media (max-width: 768px) {
+        .collage-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 150px;
+        }
+    }
+</style>
+
+<section style="background: #000; padding-top: 50px;">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-family: 'Bebas Neue'; font-size: 3rem; margin: 0;">VISIT THE STUDIO</h2>
+        <p style="color: #888; letter-spacing: 2px;">AL QUOZ INDUSTRIAL 4, DUBAI</p>
+    </div>
+    
+    <div style="width: 100%; height: 450px; position: relative; border-top: 1px solid #222; border-bottom: 1px solid var(--red);">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.554045618451!2d55.22998637626359!3d25.150742133596497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b70f6db1279%3A0x62790c59c4c43e7f!2sWrapido%20Car%20Care%20-%20Wrapping%20PPF%20Tinting!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: grayscale(1) invert(90%) contrast(1.2);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<footer style="padding: 60px 5% 20px; background: #0a0a0a; border-top: 2px solid var(--red);">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; max-width: 1200px; margin: auto;">
+        <div style="flex: 1; min-width: 300px;">
+            <h2 style="font-family: 'Bebas Neue'; color: var(--red); font-size: 2rem;">WRAPIDO CAR CARE</h2>
+            <p style="color: #888; line-height: 1.6;">Dubai's premier destination for high-end paint protection and styling. Located in the heart of Al Quoz, we specialize in preserving the legacy of your vehicle.</p>
+        </div>
+
+        <div style="flex: 1; min-width: 250px;">
+            <h4 style="color: var(--red);">VISIT US</h4>
+            <p style="font-size: 0.9rem; color: #ccc;">46F9+QF8 - Al Quoz Ind. Fourth<br>Al Quoz - Dubai - UAE</p>
+            <p style="font-size: 0.9rem; color: #ccc;"><strong>Hours:</strong> 9AM - 9PM (Sunday Closed)</p>
+        </div>
+
+        <div style="flex: 1; min-width: 200px;">
+            <h4 style="color: var(--red);">GET IN TOUCH</h4>
+            <p>Phone: <a href="tel:+971551161320" style="color: #fff; text-decoration: none;">+971 55 116 1320</a></p>
+            <p>IG: <a href="https://www.instagram.com/wrapidocarcare/" style="color: #fff; text-decoration: none;">@wrapidocarcare</a></p>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 40px; font-size: 0.7rem; color: #444;">
+        &copy; 2026 Wrapido Car Care Dubai. All Rights Reserved.
+    </div>
+</footer>
+
+<a href="https://wa.me/971551161320" class="wa-float" target="_blank">
+    <svg viewBox="0 0 32 32" style="width: 30px; fill: white;">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.475 2.016 7.781l-2.016 7.219 7.391-1.938c2.147 1.156 4.606 1.819 7.225 1.819 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.406 0-4.666-0.615-6.641-1.688l-0.479-0.255-4.385 1.151 1.172-4.193-0.276-0.443c-1.229-1.964-1.938-4.292-1.938-6.786 0-7.365 5.989-13.354 13.354-13.354s13.354 5.989 13.354 13.354-5.989 13.354-13.354 13.354zM22.505 18.51c-0.354-0.177-2.094-1.031-2.417-1.151-0.323-0.12-0.557-0.177-0.792 0.177s-0.896 1.151-1.104 1.385c-0.208 0.234-0.417 0.26-0.771 0.083-0.354-0.177-1.495-0.552-2.844-1.755-1.052-0.938-1.76-2.094-1.969-2.448-0.208-0.354-0.021-0.547 0.156-0.724 0.156-0.156 0.354-0.417 0.531-0.625s0.234-0.354 0.354-0.589c0.12-0.234 0.063-0.443-0.031-0.625s-0.792-1.911-1.083-2.615c-0.286-0.682-0.573-0.589-0.792-0.604-0.203-0.010-0.438-0.010-0.672-0.010s-0.615 0.089-0.938 0.438c-0.323 0.354-1.234 1.208-1.234 2.943s1.266 3.411 1.443 3.646c0.177 0.234 2.49 3.802 6.031 5.333 0.844 0.365 1.505 0.583 2.016 0.745 0.849 0.271 1.625 0.234 2.234 0.146 0.682-0.104 2.094-0.859 2.385-1.688 0.297-0.833 0.297-1.547 0.208-1.688s-0.323-0.234-0.677-0.411z"/></svg>
+</a>
+
+<style>
+    .wa-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        z-index: 9999; /* Higher than any other element */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+        animation: pulse 2s infinite;
+    }
+
+    .wa-float:hover {
+        transform: scale(1.15);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+</style>
+
+<style>
+    /* Styling for the Review Cards to make them "Pop" */
+    .review-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #333;
+        background: #fff; /* Keeps the review readable */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .review-glass-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(45deg, rgba(230,0,0,0.1), transparent);
+        pointer-events: none;
+    }
+
+    /* Facility Grid Styling */
+    .spec-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .spec-column h3 { font-family: 'Bebas Neue'; color: var(--red); letter-spacing: 1px; }
+    .spec-column ul { list-style: none; padding: 0; color: #ccc; font-size: 0.9rem; }
+    .spec-column li { margin-bottom: 10px; display: flex; align-items: center; }
+    .spec-column span { color: var(--red); margin-right: 10px; font-weight: bold; }
+</style>
